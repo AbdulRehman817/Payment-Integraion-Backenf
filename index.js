@@ -1,7 +1,9 @@
 import express from "express";
 import cors from "cors";
 import Stripe from "stripe";
+import dotenv from "dotenv";
 
+dotenv.config();
 const stripe = new Stripe(
   "sk_test_51QcAttFSbmqBi3dpy4OK6tQj8IjziJDwwcm7vUxqvMTIeNeXZHhooh0Sj2niuMnDDUa2tI2L23IesGlfB1IBeWbo00mwKdnVTe"
 );
